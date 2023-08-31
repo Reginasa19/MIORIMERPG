@@ -143,6 +143,13 @@ Route::get('/', [
     'as' => 'index',
 ]);
 
+
+Route::get('/pato', [
+    'uses' => 'FrontController@examen',
+    'as' => 'examen',
+]);
+
+
 Route::get('/vacantes', [
     'uses' => 'FrontController@jobs',
     'as' => 'jobs.all',
